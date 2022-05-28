@@ -6,6 +6,10 @@
   overflow: auto;
 }
 
+.wrapper::-webkit-scrollbar {
+  overflow: hidden;
+}
+
 .content {
   width: 2000px;
   height: 200px;
