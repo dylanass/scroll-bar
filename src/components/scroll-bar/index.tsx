@@ -12,7 +12,7 @@ export const Page: React.FC = () => {
     const scrollLeft = wrapperRef.current.scrollLeft;
     const scrollPercent = scrollLeft / scrollWith;
 
-    const barBoxScrollWith = barBoxRef.current.offsetWidth - barRef.current.offsetWidth;
+    const barBoxScrollWith = barBoxRef.current.offsetWidth - barRef.current.offsetWidth -2;
     const transformWidth = `${scrollPercent * barBoxScrollWith}px`;
     barRef.current.style.transform = `translateX(${transformWidth})`;
   };
