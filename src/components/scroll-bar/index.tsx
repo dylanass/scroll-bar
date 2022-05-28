@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import styles from './index.scss';
+import './index.scss';
 import { throttle } from 'lodash';
 export const Page: React.FC = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -24,12 +24,12 @@ export const Page: React.FC = () => {
   }, []);
   return (
     <>
-      <div className={styles.wrapper} ref={wrapperRef}>
-        <div className={styles.content} ref={contentRef} />
+      <div className={'wrapper'} ref={wrapperRef}>
+        <div className={'content'} ref={contentRef} />
       </div>
 
-      <div className={styles.scrollBox} ref={barBoxRef}>
-        <div className={styles['scrollBox-bar']} ref={barRef} />
+      <div className={'scrollBox'} ref={barBoxRef}>
+        <div className={'scrollBox-bar'} ref={barRef} />
       </div>
     </>
   );
